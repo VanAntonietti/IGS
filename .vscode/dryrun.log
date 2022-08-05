@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/an7onie77i/Code/IGS'
+make: Leaving directory `/Users/an7onie77i/Code/IGS'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

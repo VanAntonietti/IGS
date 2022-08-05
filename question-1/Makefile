@@ -2,6 +2,8 @@ NAME = question_1
 
 CC = gcc
 
+FLAGS = -Wall -Wextra -Werror
+
 FILES = main.c get_palindrome.c
 
 SRC = $(FILES)
@@ -11,7 +13,7 @@ OBJ = $(SRC:.c=.o)
 all:$(NAME)
 
 $(NAME):
-	$(CC) -I . $(SRC) -o $(NAME)
+	$(CC) -I . $(FLAGS) $(SRC) -o $(NAME)
 
 clean:
 	rm -f $(NAME)

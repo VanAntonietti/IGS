@@ -2,6 +2,8 @@ NAME = question_2
 
 CC = gcc
 
+FLAGS = -Wall -Wextra -Werror
+
 FILES = main.c
 
 SRC = $(FILES)

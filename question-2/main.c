@@ -16,18 +16,39 @@ int convert(char c)
 		return (500);
 	else if(c == 'M')
 		return (1000);
+	else
+		return (1);
 }
 
+int verify_input(char *str)
+{
+	int	i;
+
+	i = 0;
+	while(str[i] != '\0')
+	{
+		if(str[i] == 'I' || str[i] == 'V' || str[i] == 'X' || str[i] == 'L' || str[i] == 'C' || str[i] == 'D' || str[i] == 'M')
+			i++;
+		else
+			return (1);
+	}
+	return (0);
+}	
 
 int main(void)
 {
-	char	str[BUFFER_SIZE];
+	char	*str;
 	int		i;
 	int		res;
-	int		len;
 
+	str = malloc(sizeof(char) * BUFFER_SIZE);
 	printf("Insira os algarismos romanos com letra máxima M:\n");
-	scanf("%s", &str);
+	scanf("%s", &*str);
+	if(verify_input(str) != 0)
+	{
+		printf("Entrada inválida\n");
+		return (1);
+	}
 	i = 0;
 	res = 0;
 	while(str[i] != '\0')
@@ -44,5 +65,6 @@ int main(void)
 		}
 	}
 	printf("%s = %d\n", str, res);
+	free(str);
 	return 0;
 }

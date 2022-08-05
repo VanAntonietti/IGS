@@ -1,6 +1,6 @@
 #include "header.h"
 
-static void	*routine(t_stack *stack)
+static void	routine(t_stack *stack)
 {	
 	int		i;
 	int		j;
