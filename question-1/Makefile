@@ -1,8 +1,8 @@
 NAME = question_1
 
-CC = clang
+CC = gcc
 
-FILES = main.c
+FILES = main.c get_palindrome.c
 
 SRC = $(FILES)
 

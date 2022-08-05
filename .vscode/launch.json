@@ -10,7 +10,7 @@
 			"name": "Debug",
 			"program": "${workspaceFolder}/question-1/question_1",
 			"args": [],
-			"cwd": "${workspaceFolder}"
+			"cwd": "${workspaceFolder}/question-1/"
 		}
 	]
 }
