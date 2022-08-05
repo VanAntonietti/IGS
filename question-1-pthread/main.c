@@ -1,4 +1,17 @@
 #include "header.h"
+static void	end_free(t_igs *igs)
+{	
+	t_stack	*tmp;
+
+	while(igs->index >= 0)
+	{
+		tmp = igs->list->next;
+		free(igs->list->str);
+		free(igs->list);
+		igs->list = tmp;
+		igs->index--;
+	}
+}
 
 static int ft_open(t_igs *igs)
 {
@@ -42,5 +55,6 @@ int main(void)
 
 	ft_open(&igs);
 	get_palindrome(&igs);
+	end_free(&igs);
 	return 0; 
 }
