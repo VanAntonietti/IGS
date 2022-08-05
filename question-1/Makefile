@@ -1,6 +1,6 @@
 NAME = question_1
 
-CC = gcc
+CC = clang
 
 FILES = main.c
 
@@ -11,7 +11,7 @@ OBJ = $(SRC:.c=.o)
 all:$(NAME)
 
 $(NAME):
-	$(CC) -I . $(SRC) -o $(NAME)
+	$(CC) -I . $(SRC) -g3 -o $(NAME)
 
 clean:
 	rm -f $(NAME)

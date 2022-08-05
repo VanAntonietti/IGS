@@ -2,7 +2,15 @@
 # define HEADER_H
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
-#define BUFFER = 1024;
+#define BUFFER_SIZE 128
+
+typedef struct s_igs 
+{
+	char	**pali;
+}			t_igs;
+
 
 #endif
