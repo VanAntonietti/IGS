@@ -5,7 +5,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <ctype.h>
 
-#define BUFFER_SIZE 256
+# define HEX "0123456789ABCDEF"
+# define DEC "0123456789"
 
 #endif

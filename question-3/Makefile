@@ -1,8 +1,10 @@
-NAME = question_2
+NAME = question_3
 
 CC = gcc
 
 FILES = main.c
+
+FLAGS = -Wall -Wextra -Werror
 
 SRC = $(FILES)
 
@@ -11,7 +13,7 @@ OBJ = $(SRC:.c=.o)
 all:$(NAME)
 
 $(NAME):
-	$(CC) -I . $(SRC) -g3 -o $(NAME)
+	$(CC) -I . $(SRC) -o $(NAME)
 
 clean:
 	rm -f $(NAME)

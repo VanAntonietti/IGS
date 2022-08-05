@@ -6,9 +6,8 @@ static void	routine(t_stack *stack)
 	int		j;
 	int		max;
 
-	i = 1;
 	max = 0;
-	while(i < stack->len)
+	for(i = 1; i < stack->len; i++)
 	{
 		j = 1;
 		while(i - j >= 0 && i + j < stack->len)
@@ -20,8 +19,6 @@ static void	routine(t_stack *stack)
 		}
 		if(max < j - 1)
 			max = j - 1;
-		
-	i++;
 	}
 	if(max != 0)
 		printf("O palíndromo da palavra %s, tem %d letras\n", stack->str, (max * 2) + 1);
@@ -34,12 +31,10 @@ void	get_palindrome(t_igs *igs)
 	t_stack	*tmp;
 	int		i;
 
-	i = 0;
 	tmp = igs->list;
-	while(i <= igs->index)
+	for(i = 0; i <= igs->index;	i++)
 	{
 		routine(tmp);
 		tmp = tmp->next;
-		i++;
 	}
 }

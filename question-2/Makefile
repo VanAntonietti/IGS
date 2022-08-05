@@ -13,7 +13,7 @@ OBJ = $(SRC:.c=.o)
 all:$(NAME)
 
 $(NAME):
-	$(CC) -I . $(SRC) -o $(NAME)
+	$(CC) -I . $(FLAGS) $(SRC) -o $(NAME)
 
 clean:
 	rm -f $(NAME)
