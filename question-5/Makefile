@@ -1,4 +1,4 @@
-NAME = question_2
+NAME = question_5
 
 CC = gcc
 
@@ -11,7 +11,7 @@ OBJ = $(SRC:.c=.o)
 all:$(NAME)
 
 $(NAME):
-	$(CC) -I . $(SRC) -o $(NAME)
+	$(CC) $(SRC) -o $(NAME)
 
 clean:
 	rm -f $(NAME)

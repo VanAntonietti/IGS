@@ -11,7 +11,7 @@ OBJ = $(SRC:.c=.o)
 all:$(NAME)
 
 $(NAME):
-	$(CC) -I . $(SRC) -g3 -o $(NAME)
+	$(CC) -I . $(SRC) -o $(NAME)
 
 clean:
 	rm -f $(NAME)
