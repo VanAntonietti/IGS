@@ -1,4 +1,4 @@
-NAME = question_2
+NAME = question_4
 
 CC = gcc
 
