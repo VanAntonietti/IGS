@@ -10,7 +10,6 @@ struct ListNode *mergeKListas(struct ListNode **listas, int listasSize)
 	t_ListNode	*mergedList;
 	t_ListNode	**tmp;
 	
-	tmp = malloc(sizeof(t_ListNode) * listasSize);
 	tmp = listas;
 	i = 0;
 	size = 0;
@@ -47,12 +46,5 @@ struct ListNode *mergeKListas(struct ListNode **listas, int listasSize)
 			}
 		}
 	}
-	while(i < listasSize)
-	{
-		free(tmp[i]->n);
-		free(tmp[i]);
-		i++;
-	}
-	free(tmp);
 	return (mergedList);
 }
