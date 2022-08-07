@@ -26,5 +26,13 @@ int main(void)
 	ListNode[1]->next = ListNode[2];
 	mergedList = mergeKListas(ListNode, 3);
 
+	for(int i = 0; i < 3; i++)
+	{
+		free(ListNode[i]->n);
+		free(ListNode[i]);
+	}
+	free(mergedList->n);
+	free(mergedList);
+
 	return (0);
 }
