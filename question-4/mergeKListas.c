@@ -64,22 +64,5 @@ struct ListNode *mergeKListas(struct ListNode **listas, int listasSize)
 		}
 	}
 	bubbleSort(mergedList->n, size);
-	i = 0;
-	while(i < size)
-	{
-		printf("%d\n", mergedList->n[i]);
-		i++;
-	}
 	return (mergedList);
 }
-
-/**
- * tmp[0]->n[0] = 1;
- * tmp[0]->n[1] = 3;
- * tmp[0]->n[2] = 8;
- * tmp[1]->n[0] = 1;
- * tmp[1]->n[1] = 3;
- * tmp[1]->n[2] = 6;
- * tmp[2]->n[0] = 8;
- * tmp[2]->n[1] = 9;
- */
