@@ -2,7 +2,7 @@ NAME = question_4
 
 CC = gcc
 
-FILES = main.c
+FILES = main.c mergeKListas.c
 
 SRC = $(FILES)
 

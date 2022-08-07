@@ -8,9 +8,9 @@
 			"type": "lldb",
 			"request": "launch",
 			"name": "Debug",
-			"program": "${workspaceFolder}/question-3/question_3",
+			"program": "${workspaceFolder}/question-4/question_4",
 			"args": [],
-			"cwd": "${workspaceFolder}/question-3/"
+			"cwd": "${workspaceFolder}/question-4/"
 		}
 	]
 }

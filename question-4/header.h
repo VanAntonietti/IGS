@@ -8,4 +8,12 @@
 
 #define BUFFER_SIZE 256
 
+typedef struct ListNode {
+	struct	ListNode *next;
+	int		*n;
+	int		size;
+}			t_ListNode;
+
+struct ListNode *mergeKListas(struct ListNode **listas, int listasSize);
+
 #endif
