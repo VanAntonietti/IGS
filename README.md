@@ -35,7 +35,19 @@ This is a 5 question test, to test a constellation of skill sets in C.
 
 ## How to run
 
-All the 5 questions are separated in folder, for example, to compile question 1 just run:
+First clone this repository
+
+```sh
+git clone https://github.com/VanAntonietti/IGS.git
+```
+
+And then run
+
+```sh
+cd IGS
+```
+
+All the 5 questions are separated in folders, for example, to compile question 1 just run:
 
 ```sh
 cd question-1
